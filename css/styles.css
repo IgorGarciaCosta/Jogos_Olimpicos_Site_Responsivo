@@ -8,29 +8,110 @@ div.geral {
     margin: 0 auto;
 }
 
-.geral, header, nav, div, section, footer {
-    border: 1px solid #333;
+/* Inicio topo */
+
+.topo {
+    height: 71px;
+    position: relative;
+    background: url(../img/header.jpg) no-repeat center 0;
 }
 
-header, footer {
-    height: 50px;
-    background: blue;
+img.logomarca {
+    position: absolute;
+    left: 50%;
+    margin-left: -45.5px;
+    top: 20px;
 }
 
-nav, .busca {
+.esconde_mobile {
+    display: none;
+}
+
+@media all and (min-width:480px) {
+    header.topo {
+        height: 142px;
+    }
+    img.logomarca {
+        position: absolute;
+        left: 50%;
+        margin-left: -88px;
+        top: 20px;
+    }
+    .esconde {
+        display: none;
+    }
+    .esconde_mobile {
+        display: block;
+    }
+}
+
+/* fim topo (media query inclusa)*/
+
+/* inicio menu */
+
+nav.navegacao {
+    position: relative;
+    z-index: 9999;
     height: 40px;
-    background: green;
+    font-weight: bold;
+    background-color: #0168B3;
 }
 
-.slideshow{
-    height: 150px;
-    background: red;
+.navegacao ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-.noticia{
-    height: 150px;
-    background: yellow;
+
+.navegacao ul li {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 7px 5px 0 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
 }
-.informacao{
-    height: 150px;
-    background: green;
+
+.navegacao ul li a {
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #fff;
 }
+
+.navegacao ul li a:hover {
+    background: #F59C00;
+    color: #333;
+    border-radius: 4px;
+}
+
+.navegacao ul li.esconde_900{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .navegacao {
+        position: relative;
+        padding-top: 3px;
+    }
+    .navegacao ul li {
+        background-color: #0168B3;
+        display: none;
+        margin: 0;
+    }
+    .navegacao ul li a {
+        display: block;
+        padding: 5px 5px 5px 10px;
+        text-align: left;
+    }
+    .navegacao ul:hover li {
+        border-bottom: 1px solid #01ace4;
+        display: block;
+        margin: 0;
+    }
+
+    .navegacao ul li.esconde_900{
+        display: block;
+    }
+}
+
+/* fim menu */
