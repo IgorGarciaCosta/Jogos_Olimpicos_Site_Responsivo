@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body id="home">
@@ -23,7 +25,7 @@
         <nav class="navegacao" aria-haspopup="true">
             <ul>
                 <li class="esconde_900"><a onclick="void(0)">Menu <span>&equiv;</span></a></li>
-                <li class="ativo"><a href="#">Home</a></li>
+                <li ><a href="#">Home</a></li>
                 <li><a href="#">Modalidades</a></li>
                 <li><a href="#">Calendário</a></li>
                 <li><a href="#">Destaques</a></li>
@@ -33,12 +35,23 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <div class="busca">Busca</div>
+
         <!-- fim div cabeçalho -->
 
         <!-- inicio main -->
         <main>
-            <section class="slideshow">SlideShow</section>
+            <section class="slideshow">
+                <figure id="slide">
+                    <img src="img/rio1.jpg" alt="Paisagem 1">
+                    <img src="img/rio2.jpg" alt="Paisagem 2">
+                    <img src="img/rio3.jpg" alt="Paisagem 3">
+                    <img src="img/rio4.jpg" alt="Paisagem 4">
+                    <img src="img/rio5.jpg" alt="Paisagem 5">
+                    <img src="img/rio6.jpg" alt="Paisagem 6">
+                    
+                </figure>
+
+            </section>
             <div class="noticia">Notícias</div>
             <div class="informacao">Informações</div>
         </main>
