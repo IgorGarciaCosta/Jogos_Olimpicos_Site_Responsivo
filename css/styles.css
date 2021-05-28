@@ -149,12 +149,13 @@ nav.navegacao {
 
 /* fim slideshow */
 
-
 /* inicio da busca */
-form{
+
+form {
     position: relative;
 }
-.busca{
+
+.busca {
     width: 100%;
     height: 25px;
     text-align: center;
@@ -163,16 +164,16 @@ form{
     margin-bottom: 5px;
 }
 
-.busca input[type="search"]{
+.busca input[type="search"] {
     width: 98%;
     height: 15px;
     font-size: 15px;
     border: none;
     margin-top: 5px;
-    background-color:#D5DE37; 
+    background-color: #D5DE37;
 }
 
-.busca input[type="submit"]{
+.busca input[type="submit"] {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -181,6 +182,59 @@ form{
     text-indent: -9999px;
     cursor: pointer;
     border: none;
-    background:url('../img/lupa.png') no-repeat;
+    background: url('../img/lupa.png') no-repeat;
 }
+
 /* fim da busca */
+
+/*inicio das noticias */
+
+.noticia {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #fbb718;
+}
+
+.noticia h1 {
+    font-size: 20px;
+    color: #fbb718;
+    margin: 2px 6px 0;
+}
+
+.caixa {
+    margin: 20px 0;
+    padding: 0 2px;
+}
+
+.caixa figure {
+    margin: 0;
+}
+
+.caixa h2 {
+    font-size: 16px;
+    color: #fbb718;
+    margin: 2px 6px 0;
+}
+
+.caixa p {
+    font-size: 12px;
+    color: #333;
+}
+
+.caixa a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #555;
+}
+
+.caixa a:hover {
+    text-decoration: underline;
+}
+
+.caixa figure img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/*fim das noticias */
